@@ -1,0 +1,49 @@
+\documentclass[12pt,american]{article}
+\usepackage[T1]{fontenc}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{color,soul}
+\usepackage{amsmath}
+\usepackage{fourier}
+\usepackage[hidelinks]{hyperref}
+\usepackage{babel}
+\usepackage[babel]{microtype}
+\usepackage[babel]{csquotes}
+\usepackage[journal={Name of the Journal},
+			manuscript={Manuscript ID},
+			editor={Editor}]{reviewresponse}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+% \usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+
+\usepackage[a4paper,total={160mm,245mm},left=25mm,top=25mm]{geometry}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{.5pt}
+\usepackage[shortlabels]{enumitem}
+\newlist{detail}{itemize}{3}
+\setlist[detail, 1]{label=\textbullet,leftmargin=21pt,nosep}
+\usepackage[backend=biber,style=ieee,dashed=false,url=false,isbn=false,defernumbers=true,refsection=section]{biblatex}
+
+\bibliography{literature.bib}
+
+
+\title{Title of the manuscript}
+\author{Author name here}
+
+
+\begin{document}
+\maketitle
+
+% Cover Letter
+\input{cover_letter.tex}
+\setcounter{page}{0}
+\pagestyle{fancy}
+\fancyfoot[R]{\thepage\ / \pageref{LastPage}}
+\fancyfoot[L]{Response Letter for Manuscript ID}
+\fancyfoot[C]{\ }
+\input{Reviewers/Meta.tex}
+\input{Reviewers/R1.tex}
+\input{Reviewers/R2.tex}
+% \input{Reviewers/R3.tex}
+
+\end{document}
