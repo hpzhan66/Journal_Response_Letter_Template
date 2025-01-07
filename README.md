@@ -13,7 +13,7 @@ Template
     ...
 ```
 ### Usage
-Download the project, check the tex files for detail.
+Download the project, check the tex files for details.
 ## Acknowledgment
 
 This template is modified from [Journal-Response-Letter-Template-Latex](https://github.com/shellywhen/Journal-Response-Letter-Template-Latex), thanks for the awesome work!
